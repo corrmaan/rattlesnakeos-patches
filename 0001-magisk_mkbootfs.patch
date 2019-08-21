@@ -1,3 +1,4 @@
+# By CaseyBakey (https://github.com/CaseyBakey/chaosp/blob/master/mkbootfs.patch)
 --- a/system/core/cpio/mkbootfs.c
 +++ b/system/core/cpio/mkbootfs.c
 @@ -179,9 +179,13 @@ static void _archive_dir(char *in, char *out, int ilen, int olen)
