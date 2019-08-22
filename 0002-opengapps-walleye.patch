@@ -37,13 +37,3 @@
       persist.traced.enable=1
   
 + $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
-*** a/device/google/muskie/walleye/BoardConfig.mk	2019-08-20 23:38:14.000000000 -0300
---- b/device/google/muskie/walleye/BoardConfig.mk	2019-08-20 23:43:09.958944925 -0300
-***************
-*** 33,35 ****
---- 33,37 ----
-  # VTS DTBO Verification. This kernel cmdline parameter should be added by the bootloader
-  # for all future devices.
-  BOARD_KERNEL_CMDLINE += androidboot.dtbo_idx=3
-+ 
-+ WITH_DEXPREOPT := true
