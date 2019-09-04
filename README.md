@@ -16,6 +16,7 @@ Remember to add the following to your `~/.rattlesnakeos.toml` config file, follo
   patches = [
       "0001-magisk_mkbootfs.patch",
       "0002-opengapps-walleye.patch",
+      "0003-enable-doze-mode.patch",
   ]
   
 [[custom-manifest-remotes]]
