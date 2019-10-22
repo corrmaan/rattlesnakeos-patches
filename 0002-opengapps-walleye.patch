@@ -17,8 +17,8 @@
   
   PRODUCT_MANUFACTURER := Google
   PRODUCT_BRAND := Android
-*** device/google/muskie/device-walleye.mk.orig	2019-10-22 00:40:47.000000000 -0300
---- device/google/muskie/device-walleye.mk	2019-10-22 00:42:08.511326668 -0300
+*** a/device/google/muskie/device-walleye.mk	2019-10-22 00:40:47.000000000 -0300
+--- b/device/google/muskie/device-walleye.mk	2019-10-22 00:42:08.511326668 -0300
 ***************
 *** 14,19 ****
 --- 14,21 ----
