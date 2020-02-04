@@ -4,7 +4,7 @@ My patches for Rattlesnake OS.
 ## opengapps
 Note that building opengapps with Rattlesnake OS will require a larger EC2 volume size. By default it's set to 200 GB, but can be increased by editing the value of the `VolumeSize` key in `templates/lambda_template.go`. 300 worked for me.
 
-As well, opengapps' aosp_build requires `zlib`. I created a script to install it, available at https://github.com/corrmaan/rattlesnakeos-scripts.
+As well, opengapps' aosp_build requires `zlib` and `git-lfs`. I created a script to install it, available at https://github.com/corrmaan/rattlesnakeos-scripts.
 
 I have only tested this on my Pixel 2 (walleye), hence the specific patch for this device. PRs are welcome for other supported devices and/or a more generic patch.
 
@@ -14,10 +14,9 @@ Remember to add the following to your `~/.rattlesnakeos.toml` config file, follo
 [[custom-patches]]
   repo = "https://github.com/corrmaan/rattlesnakeos-patches"
   patches = [
-      "0001-magisk_mkbootfs.patch",
-      "0002-opengapps-walleye.patch",
-      "0003-enable-doze-mode.patch",
-      "0004-opengapps-find-apk-for-pkg.patch",
+      "00001-opengapps-find-apk-for-pkg.patch",
+      "00002-opengapps-walleye.patch",
+      "00003-magisk_mkbootfs.patch",
   ]
   
 [[custom-manifest-remotes]]
