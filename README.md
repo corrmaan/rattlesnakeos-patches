@@ -2,7 +2,7 @@
 My patches for Rattlesnake OS.
 
 ## opengapps
-Note that building opengapps with Rattlesnake OS will require a larger EC2 volume size. By default it's set to 200 GB, but can be increased by editing the value of the `VolumeSize` key in `templates/lambda_template.go`. 300 worked for me.
+Note that building opengapps with Rattlesnake OS will require a larger EC2 volume size. By default it's set to 200 GB, but can be increased by editing the value of the `VolumeSize` key in `templates/lambda_template.go`. 400 worked for me.
 
 As well, opengapps' aosp_build requires `zlib` I created a script to install it, available at https://github.com/corrmaan/rattlesnakeos-scripts. `git-lfs` is also required but I didn't have luck with having it installed through the script, so I made a `rattlesnakeos-stack` patch for it, available [here](https://gist.githubusercontent.com/corrmaan/5966d62f050d0f0cf22d7af60c37aac3/raw/50da4db5386bf791feda293db913741530e956f1/rattlesnakeos-stack-10.0.6-opengapps.patch "rattlesnakeos-stack-10.0.6-opengapps.patch"). After cloning `rattlesnakeos-stack`, apply the patch and build from source:
 
